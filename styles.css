@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:wght@1;200;300&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #060522;
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+  min-width: 1105px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Ysabeau', sans-serif;
+}
+.robot {
+  /*margin-left: 100px;*/
+  /*margin-top: 50px;*/
+  background-image: url("src/🤖 Robot Emoji [Free Download IOS Emojis].png");
+  background-size: cover;
+  width: 305px;
+  height: 320px;
+}
+.robot__control {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  max-width: 600px;
+}
+.robot__input {
+  position: relative;
+  width: 400px;
+  background-color: transparent;
+  border-radius: 50px;
+  height: 30px;
+  border: 1px solid white;
+  color: white;
+  padding: 30px 20px;
+}
+.input {
+  position: relative;
+}
+.input::after {
+  content: "Ответ";
+  background-color: #060522;
+  position: absolute;
+  color: white;
+  z-index: 2;
+  text-align: center;
+  height: 20px;
+  width: 60px;
+  left: 35px;
+  top: -13px;
+}
+.robot__input:focus {
+  outline: none;
+}
+.automatic__btn {
+  background: #210926;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  color: white;
+  width: 200px;
+  padding: 20px 30px;
+  cursor: pointer;
+  left: 0;
+  transition: .3s all ease-in-out;
+}
+.automatic__btn:hover, .automatic__btn:focus {
+  background-color: #881337;
+}
+.answer__area {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.theory {
+  display: flex;
+  font-size: 1.5rem;
+  flex-direction: column;
+  gap: 20px;
+}
